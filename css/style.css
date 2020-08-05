@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #434055;
+  color: #6ace90;
+}
+
+h1 {
+  margin: 60px;
+  font-size: 82px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+a {
+  color: #6ace90;
+  text-decoration: none;
+}
+
+
+
+.player {
+  display: inline-block;
+  width: 30%;
+}
+
+footer {
+ margin-top: 60px;
+}
