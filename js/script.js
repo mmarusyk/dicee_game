@@ -1,12 +1,11 @@
-let randomValue1 = Math.floor(Math.random() * 6) + 1;
-let randomValue2 = Math.floor(Math.random() * 6) + 1;
+function setRandomValue(nameOfAttribute) {
+  let randomValue = Math.floor(Math.random() * 6) + 1;
+  document.getElementById(nameOfAttribute).setAttribute("src", "images/dice"+ randomValue +".png");
+  return randomValue;
+}
 
-let dice1 = document.getElementById("dice1");
-let dice2 = document.getElementById("dice2");
-
-dice1.setAttribute("src", "images/dice"+ randomValue1 +".png");
-dice2.setAttribute("src", "images/dice"+ randomValue2 +".png");
-
+let randomValue1 = setRandomValue("dice1");
+let randomValue2 = setRandomValue("dice2");
 
 let title = document.querySelector("h1");
 if (randomValue1 > randomValue2) {
